@@ -10,8 +10,10 @@ let reverseVowels = function(s) {
     let answer = s.split('');
     while(pointer1 < pointer2){
         if(vowels.includes(s[pointer1]) && vowels.includes(s[pointer2])){
-            [answer[pointer1],answer[pointer2]] = [answer[pointer2],answer[pointer1]];
-            
+           // [answer[pointer1],answer[pointer2]] = [answer[pointer2],answer[pointer1]];
+            let temp = answer[pointer1];
+            answer[pointer1] = answer[pointer2];
+            answer[pointer2] = temp;
             pointer1++;
             pointer2--;
         
