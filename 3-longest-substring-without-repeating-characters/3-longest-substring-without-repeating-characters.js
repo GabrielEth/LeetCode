@@ -3,8 +3,8 @@
  * @return {number}
  */
 let lengthOfLongestSubstring = function(s) {
-    if (s.length == 1) return 1;
-    if (s.length == 2 && s[0] != s[1]) return 2;
+    //if (s.length == 1) return 1;
+    //if (s.length == 2 && s[0] != s[1]) return 2;
     if (s.length == 0) return 0
     
     let areCharDiff = function (string, startIndex, EndIndex){
